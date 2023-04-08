@@ -158,6 +158,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 8px;
 }
 .advantages-text {
   font-weight: 400;
@@ -216,12 +217,14 @@ body {
   line-height: 1.2x;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 32px;
 }
 .team-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-top: 8px;
 }
 /*---------FOOTER--------------*/
 .footer {
@@ -298,6 +301,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--portfolio-title-color, #2e2f42);
+  margin-top: 32px;
 }
 .portfolio-text {
   font-family: "Roboto", sans-serif;
@@ -306,4 +310,5 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--portfolio-text-color, #2e2f42);
+  margin-top: 8px;
 }
