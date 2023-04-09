@@ -23,7 +23,7 @@
   <body>
     <!------------Header content------------->
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo-web link" href="./index.html"
             >Web<span class="header-logo">Studio</span></a
@@ -61,16 +61,18 @@
     <!------------Hero content------------->
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions<br />for Your Business</h1>
-          <button class="hero-btn" type="button">Order Service</button>
+          <div class="container-hero-btn">
+            <button class="hero-btn btn" type="button">Order Service</button>
+          </div>
         </div>
       </section>
       <!------------ Section 1 ------------->
       <section class="advantages">
-        <div class="container">
+        <div class="container advantages-container">
           <h2 hidden>About</h2>
-          <ul class="advantages-list list">
+          <ul class="advantages-list list wrap">
             <li class="advantages-item">
               <h3 class="advantages-title">Strategy</h3>
               <p class="advantages-text">
@@ -103,10 +105,10 @@
         </div>
       </section>
       <!------------ Section 2 ------------->
-      <section class="works">
+      <section class="works wrap">
         <div class="container">
           <h2 class="works-title">What are we doing</h2>
-          <ul class="works-list list">
+          <ul class="works-list list wrap-works">
             <li class="works-item">
               <img
                 src="images/image-1.jpg"
@@ -138,7 +140,7 @@
       <section class="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
-          <ul class="team-list list">
+          <ul class="team-list list wrap-team">
             <li class="team-item">
               <img
                 src="images/image-4.jpg"

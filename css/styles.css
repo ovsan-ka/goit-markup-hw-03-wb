@@ -56,7 +56,13 @@ body {
   background: var(--background-main-color);
   padding-top: 25.5px;
 }
+.header-container {
+  display: flex;
+}
 .header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 
 .header-logo-web {
@@ -76,8 +82,14 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: #2e2f42;
+  margin-right: 76px;
 }
 .header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-item {
 }
 .header-link {
   font-family: "Roboto";
@@ -86,6 +98,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  gap: 30px;
 }
 .header-link:hover,
 .header-link:focus {
@@ -95,6 +108,8 @@ body {
 .header-contact {
 }
 .header-contact-list {
+  display: flex;
+  gap: 40px;
 }
 .header-contact-item {
 }
@@ -113,29 +128,44 @@ body {
 /*-----------HERO--------------*/
 .hero {
   background: #2e2f42;
-  padding-top: 188px;
+  padding-top: 180px;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero-title {
-  font-weight: 700;
+  min-width: 496px;
+  height: 120px;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 48px;
+}
+.container-hero-btn {
+  padding-bottom: 188px;
+  display: block;
 }
 .hero-btn {
+  min-width: 169px;
+  height: 56px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
+  text-align: center;
   letter-spacing: 0.04em;
-  cursor: pointer;
   color: #ffffff;
+  cursor: pointer;
   background-color: #4d5ae5;
-  margin-top: 48px;
+  border-radius: 4px;
+  padding: 16px 32px;
+  gap: 10px;
+  margin: 0 auto;
 }
 .hero-btn:hover,
 .hero-btn :focus {
@@ -147,30 +177,46 @@ body {
   background: #e5e5e5;
   padding-top: 120px;
 }
+.advantages-container {
+  display: flex;
+}
+.wrap {
+  display: flex;
+  gap: 24px;
+}
 .advantages-list {
 }
 
 .advantages-item {
 }
 .advantages-title {
+  width: 264px;
+  height: 24px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 8px;
 }
 .advantages-text {
+  width: 264px;
+  height: 72px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-top: 8px;
+  gap: 24px;
 }
-/*-----------ADVANTAGES--------------*/
+/*-----------WOR--------------*/
 .works {
   background: #e5e5e5;
   padding-top: 120px;
+}
+.wrap {
+  display: flex;
+  gap: 24px;
 }
 .works-title {
   font-weight: 700;
@@ -180,23 +226,17 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
-/*-----------WORKS--------------*/
-.works {
-  background: #e5e5e5;
-  padding-top: 120px;
-}
-.works-title {
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-.works-list {
+.wrap-works {
+  display: flex;
+  gap: 24px;
 }
 .works-item {
+  padding-bottom: 120px;
 }
-/*----------TEAM--------------*/
+
+/*---------TEAM--------------*/
 
 .team {
   background: #e5e5e5;
@@ -205,8 +245,14 @@ body {
 .team-title {
   font-size: 36px;
   line-height: 1.11;
+  text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+.wrap-team {
+  display: flex;
+  gap: 24px;
 }
 .team-list {
 }
