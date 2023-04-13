@@ -179,9 +179,6 @@ body {
   background: #ffffff;
   padding-top: 120px;
 }
-.advantages-container {
-  display: flex;
-}
 .wrap {
   display: flex;
   gap: 24px;
@@ -191,9 +188,7 @@ body {
 
 .advantages-item {
 }
-.advantages-item-wrap {
-  padding-top: 120px;
-}
+
 .advantages-title {
   width: 264px;
   height: 24px;
@@ -202,6 +197,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 8px;
 }
 .advantages-text {
   width: 264px;
@@ -212,9 +208,33 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
   margin-top: 8px;
+}
+.preference-list {
+  display: flex;
+  justify-content: center;
   gap: 24px;
 }
-/*-----------WOR--------------*/
+
+.preference-item {
+  width: 264px;
+  height: 112px;
+}
+.preference-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #f4f4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preference-icon-item {
+  width: 64px;
+  height: 64px;
+}
+
+/*----------WOR--------------*/
+
 .works {
   background: #ffffff;
   padding: 120px 0px;
@@ -305,9 +325,54 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: #4d5ae5;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.link {
+.team-icon-item {
+  width: 16px;
+  height: 16px;
+  fill: #f4f4fd;
+}
+
+/*---------CUSTOMERS--------------*/
+
+.customers {
+  padding: 120px 0px;
+}
+.customers-title {
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+.customers-wrap {
+}
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.ustomers-item {
+  width: 104px;
+  height: 56px;
+}
+.customers-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customers-icon-item {
+  width: 104px;
+  height: 56px;
 }
 /*---------FOOTER--------------*/
 .footer {
