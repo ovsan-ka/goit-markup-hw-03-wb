@@ -455,13 +455,38 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal-close-btn">
           <svg class="modal-svg" width="8px" height="8px">
             <use href="./images/icons.svg#icon-vector"></use>
           </svg>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <input
+            type="text"
+            name="user-name"
+            class="modal-input"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="text"
+            name="user-tel"
+            class="modal-input"
+            placeholder="Phone"
+            required
+          />
+          <input
+            type="text"
+            name="user-email"
+            class="modal-input"
+            placeholder="Email"
+            required
+          />
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
