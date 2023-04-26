@@ -464,12 +464,13 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <label class="modal-label">
-            <span>Name</span>
+          <div class="modal-field">
+            <label class="modal-label" for="user-name">Name</label>
             <div class="input-container">
               <input
                 type="text"
                 name="user-name"
+                id="user-name"
                 class="modal-input"
                 required
               />
@@ -477,22 +478,29 @@
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
-          </label>
-          <label class="modal-label">
-            <span>Phone</span>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-name">Phone</label>
             <div class="input-container">
-              <input type="tel" name="user-tel" class="modal-input" required />
+              <input
+                type="tel"
+                name="user-tel"
+                id="user-name"
+                class="modal-input"
+                required
+              />
               <svg class="modal-input-icons" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
-          </label>
-          <label class="modal-label">
-            <span>Email</span>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-name">Email</label>
             <div class="input-container">
               <input
                 type="email"
                 name="user-email"
+                id="user-name"
                 class="modal-input"
                 required
               />
@@ -500,16 +508,16 @@
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
-          </label>
-          <label class="modal-label">
-            <span>Comment</span>
-            <input
-              type="comment"
-              name="comment"
-              class="modal-input"
-              placeholder="Text input"
-            />
-          </label>
+          </div>
+          <div class="modal-field-area">
+          <label class="modal-label" for="text input">Comment</label>
+            <textarea
+              name="text input"
+              id="text input"
+              class="modal-textarea"
+              placeholder="Text input"></textarea>
+            </div>
+            <div class="modal-field-check">
           <button type="submit">Send</button>
         </form>
       </div>
