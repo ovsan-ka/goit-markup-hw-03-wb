@@ -453,6 +453,23 @@
             </li>
           </ul>
         </div>
+        <div class="third-footer-container">
+          <p class="subscribe-text">Subscribe</p>
+          <form>
+            <div class="form-btn-wrap">
+              <label aria-label="email-input">
+                <input
+                  type="email"
+                  name="subscribe-input"
+                  class="subscribe-input"
+                  placeholder="E-mail"
+                  required
+                />
+              </label>
+              <button class="footer-btn" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop" data-modal>
@@ -480,12 +497,12 @@
             </div>
           </div>
           <div class="modal-field">
-            <label class="modal-label" for="user-name">Phone</label>
+            <label class="modal-label" for="user-phone">Phone</label>
             <div class="input-container">
               <input
                 type="tel"
                 name="user-tel"
-                id="user-name"
+                id="user-phone"
                 class="modal-input"
                 required
               />
@@ -495,12 +512,12 @@
             </div>
           </div>
           <div class="modal-field">
-            <label class="modal-label" for="user-name">Email</label>
+            <label class="modal-label" for="user-email">Email</label>
             <div class="input-container">
               <input
                 type="email"
                 name="user-email"
-                id="user-name"
+                id="user-email"
                 class="modal-input"
                 required
               />
@@ -510,15 +527,36 @@
             </div>
           </div>
           <div class="modal-field-area">
-          <label class="modal-label" for="text input">Comment</label>
+            <label class="modal-label" for="text input">Comment</label>
             <textarea
               name="text input"
               id="text input"
               class="modal-textarea"
-              placeholder="Text input"></textarea>
-            </div>
-            <div class="modal-field-check">
-          <button type="submit">Send</button>
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="modal-field-check">
+            <input
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+              class="input-check visually-hidden"
+              value="true"
+              required
+            />
+            <label class="check-label-text" for="privacy">
+              <span>
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="check-label-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <div class="modal-submit-btn">
+            <button type="submit" class="modal-send-btn">Send</button>
+          </div>
         </form>
       </div>
     </div>
